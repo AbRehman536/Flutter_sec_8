@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sec_8/appbar_demo.dart';
+import 'package:flutter_sec_8/asset_image.dart';
 import 'package:flutter_sec_8/fab_demo.dart';
+import 'package:flutter_sec_8/nested_row_column.dart';
+import 'package:flutter_sec_8/network_image.dart';
 import 'package:flutter_sec_8/row_column.dart';
 
 void main() {
@@ -34,7 +37,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: RowColumnDemo(),
+      home: AssetImageDemo(),
     );
   }
 }
