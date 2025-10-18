@@ -25,7 +25,8 @@ class _SingleSelectionDemoState extends State<SingleSelectionDemo> {
           return ListTile(
             selected: selectedIndex == index,
             selectedTileColor: Colors.blue,
-            selectedColor: Colors.white,
+            
+            textColor: selectedIndex == index ?Colors.red:Colors.black ,
             leading: Icon(Icons.notifications),
             title: Text("Notifications : $selectedIndex"),
             subtitle: Text("Index : $index"),
