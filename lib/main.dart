@@ -9,6 +9,7 @@ import 'package:flutter_sec_8/login_form_validation.dart';
 import 'package:flutter_sec_8/multiple_selection.dart';
 import 'package:flutter_sec_8/nested_row_column.dart';
 import 'package:flutter_sec_8/network_image.dart';
+import 'package:flutter_sec_8/pageview.dart';
 import 'package:flutter_sec_8/row_column.dart';
 import 'package:flutter_sec_8/single_selection.dart';
 
@@ -43,7 +44,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: GridViewDemo(),
+      home: PageviewDemo(),
     );
   }
 }
