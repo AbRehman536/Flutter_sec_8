@@ -28,7 +28,7 @@ class _PageviewDemoState extends State<PageviewDemo> {
         itemBuilder: (BuildContext context, int index) {
           return Column(
             children: [
-              Image.asset(onBoardingList[index].image.toLowerCase()),
+              Image.asset(onBoardingList[index].image.toString()),
               Text(onBoardingList[index].title.toString(),style: TextStyle(
                 fontSize: 30,
                 fontWeight: FontWeight.w900
