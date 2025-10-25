@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sec_8/appbar_demo.dart';
 import 'package:flutter_sec_8/asset_image.dart';
+import 'package:flutter_sec_8/bottom_bar.dart';
 import 'package:flutter_sec_8/fab_demo.dart';
 import 'package:flutter_sec_8/grid_view.dart';
 import 'package:flutter_sec_8/list_tile_demo.dart';
@@ -43,9 +44,9 @@ class MyApp extends StatelessWidget {
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+        useMaterial3: false,
       ),
-      home: TabBarDemo(),
+      home: BottomBarDemo(),
     );
   }
 }
