@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_sec_8/appbar_demo.dart';
 import 'package:flutter_sec_8/asset_image.dart';
 import 'package:flutter_sec_8/bottom_bar.dart';
+import 'package:flutter_sec_8/bottom_sheet.dart';
 import 'package:flutter_sec_8/extra.dart';
 import 'package:flutter_sec_8/fab_demo.dart';
 import 'package:flutter_sec_8/grid_view.dart';
@@ -47,7 +48,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: false,
       ),
-      home: BottomBarDemo(),
+      home: BottomSheetDemo(),
     );
   }
 }
