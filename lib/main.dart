@@ -3,6 +3,7 @@ import 'package:flutter_sec_8/appbar_demo.dart';
 import 'package:flutter_sec_8/asset_image.dart';
 import 'package:flutter_sec_8/bottom_bar.dart';
 import 'package:flutter_sec_8/bottom_sheet.dart';
+import 'package:flutter_sec_8/drawer_menu.dart';
 import 'package:flutter_sec_8/extra.dart';
 import 'package:flutter_sec_8/fab_demo.dart';
 import 'package:flutter_sec_8/grid_view.dart';
@@ -13,6 +14,7 @@ import 'package:flutter_sec_8/multiple_selection.dart';
 import 'package:flutter_sec_8/nested_row_column.dart';
 import 'package:flutter_sec_8/network_image.dart';
 import 'package:flutter_sec_8/pageview.dart';
+import 'package:flutter_sec_8/popup_menu_demo.dart';
 import 'package:flutter_sec_8/row_column.dart';
 import 'package:flutter_sec_8/single_selection.dart';
 import 'package:flutter_sec_8/tab_bar.dart';
@@ -28,6 +30,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
@@ -48,7 +51,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: false,
       ),
-      home: BottomSheetDemo(),
+      home: DrawerMenuDemo(),
     );
   }
 }
