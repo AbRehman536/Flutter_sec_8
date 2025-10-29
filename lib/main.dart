@@ -3,6 +3,7 @@ import 'package:flutter_sec_8/appbar_demo.dart';
 import 'package:flutter_sec_8/asset_image.dart';
 import 'package:flutter_sec_8/bottom_bar.dart';
 import 'package:flutter_sec_8/bottom_sheet.dart';
+import 'package:flutter_sec_8/dialog_box.dart';
 import 'package:flutter_sec_8/drawer_menu.dart';
 import 'package:flutter_sec_8/extra.dart';
 import 'package:flutter_sec_8/fab_demo.dart';
@@ -51,7 +52,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: false,
       ),
-      home: DrawerMenuDemo(),
+      home: DialogBoxDemo(),
     );
   }
 }

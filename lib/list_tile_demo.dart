@@ -8,7 +8,7 @@ class ListTileDemo extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("List Tile"),
-        leading: Icon(Icons.arrow_back_ios),
+        //leading: Icon(Icons.arrow_back_ios),
         backgroundColor: Colors.blue,
         foregroundColor: Colors.white,
         centerTitle: true,
