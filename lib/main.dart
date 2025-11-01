@@ -16,13 +16,20 @@ import 'package:flutter_sec_8/multiple_selection.dart';
 import 'package:flutter_sec_8/nested_row_column.dart';
 import 'package:flutter_sec_8/network_image.dart';
 import 'package:flutter_sec_8/pageview.dart';
+import 'package:flutter_sec_8/passing_parameters/screen_a.dart';
 import 'package:flutter_sec_8/popup_menu_demo.dart';
+import 'package:flutter_sec_8/providers/screen_1.dart';
+import 'package:flutter_sec_8/providers/user.dart';
 import 'package:flutter_sec_8/row_column.dart';
 import 'package:flutter_sec_8/single_selection.dart';
 import 'package:flutter_sec_8/tabBar_demo.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MultiProvider(providers: [
+    ChangeNotifierProvider(create: (context)=> UserProvider()),
+  ],
+  child: const MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -53,7 +60,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: false,
       ),
-      home: DateTimePickerDemo(),
+      home: Screen1(),
     );
   }
 }
