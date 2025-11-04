@@ -3,6 +3,7 @@ import 'package:flutter_sec_8/appbar_demo.dart';
 import 'package:flutter_sec_8/asset_image.dart';
 import 'package:flutter_sec_8/bottom_bar.dart';
 import 'package:flutter_sec_8/bottom_sheet.dart';
+import 'package:flutter_sec_8/cupertino_switch.dart';
 import 'package:flutter_sec_8/date_time_picker.dart';
 import 'package:flutter_sec_8/dialog_box.dart';
 import 'package:flutter_sec_8/drawer_menu.dart';
@@ -60,7 +61,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: false,
       ),
-      home: Screen1(),
+      home: CupertinoSwitchDemo(),
     );
   }
 }
