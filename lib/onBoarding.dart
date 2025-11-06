@@ -18,7 +18,7 @@ class Onboarding extends StatelessWidget {
                 fontSize: 28.4,
                 color: Color(0xffFF5934),
               ),),
-              Text("Retailer App",style: GoogleFonts.inter(
+              Text("Retailer Ap",style: GoogleFonts.inter(
                 fontSize: 11.11,
                 fontWeight: FontWeight.w500,
                 color: Color(0xff121212),
