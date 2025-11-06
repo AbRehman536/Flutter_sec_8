@@ -20,39 +20,35 @@ class _DateTimePickerDemoState extends State<DateTimePickerDemo> {
         backgroundColor: Colors.blue,
         foregroundColor: Colors.white,
       ),
-      body: Column(children: [
-        Text(
-          DateFormat.yMMMEd().format(selectedDate),
-          style: TextStyle(fontWeight: FontWeight.w900,fontSize: 30),
-        ),
-        ElevatedButton(onPressed: (){
-          showDatePicker(
-              context: context,
-              firstDate: DateTime(1970),
-              lastDate: DateTime.now()).then((val){
-                setState(() {
-                  selectedDate = val!;
-                });
-          });
-        }, child: Text("Show Date Picker")),
-        SizedBox(height: 20,),
-        Text(
-          selectedTime.format(context).toString(),
-          style: TextStyle(
-            fontSize: 30,
-            fontWeight: FontWeight.w500,
-          ),
-        ),
-        ElevatedButton(onPressed: (){
-          showTimePicker(
-              context: context,
-              initialTime: TimeOfDay.now()).then((val){
-                setState(() {
-                  selectedTime = val!;
-                });
-          });
-        }, child: Text("Show Time Picker"))
-      ],),
+     body: Column(children: [
+       Text(
+         DateFormat.yMEd().format(selectedDate),
+         style: TextStyle(fontWeight: FontWeight.w900,fontSize: 30),
+       ),
+       ElevatedButton(onPressed: (){
+         showDatePicker(
+             context: context,
+             firstDate: DateTime(1970),
+             lastDate: DateTime.now()).then((val){
+               setState(() {
+                 selectedDate = val!;
+               });
+         });
+       }, child: Text("Show Date Picker")),
+       Text(
+         selectedTime.format(context).toString(),
+         style: TextStyle(fontSize: 30,fontWeight: FontWeight.w900),
+       ),
+       ElevatedButton(onPressed: (){
+         showTimePicker(
+             context: context,
+             initialTime: TimeOfDay.now()).then((val){
+               setState(() {
+                 selectedTime = val!;
+               });
+         });
+       }, child: Text("Show Time Picker"))
+     ],),
     );
   }
 }
