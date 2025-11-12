@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class MultipleSelectionDemo extends StatefulWidget {
   const MultipleSelectionDemo({super.key});
@@ -35,7 +36,9 @@ class _MultipleSelectionDemoState extends State<MultipleSelectionDemo> {
             textColor: selectedIndex.contains(index) ?Colors.white : Colors.black,
             iconColor: selectedIndex.contains(index) ?Colors.white : Colors.black,
             leading: Icon(selectedIndex.contains(index) ?Icons.notifications_active_outlined : Icons.notifications,),
-            title: Text("Notifications,$selectedIndex"),
+            title: Text("Notifications,$selectedIndex",style: GoogleFonts.kronaOne(
+              fontSize: 28.4, fontWeight: FontWeight.w400,color: Color(0xffFF5934)
+            ),),
             subtitle: Text("Index, $index"),
             trailing: Icon(Icons.arrow_forward_ios),
           );
